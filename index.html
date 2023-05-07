@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="tr-TR">
+<html>
 <head>
-  <title>Hakkımda</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #000000;
+}
+
+.active {
+  background-color: #8e8e8f;
+}
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Hakkımda</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Beni Tanı <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="ozgecmis.html">Özgeçmişim</a></li>
-          <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-        </ul>
-      </li>
-      <li><a href="memleket.html">Bursa</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+<ul>
+  <li><a class="active" href="index.html">Hakkımda</a></li>
+  <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+  <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+  <li><a href="sehrim.html">Şehrim</a></li>
+  <li><a href="mirasimiz.html">Mirasımız</a></li>
+  <li style="float:right"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
 <h1>Hakkımda</h1>
 <p> Merhaba! Ben Dilara Çetin. 11 Ekim 2004 yılında Bursa'da doğdum. 4 kişilik bir ailem var: Annem, babam, kardeşim Barış ve ben. Bursa'nın Görükle semtinde bir apartmanda yaşıyoruz. Anne ve baba tarafı Bulgaristan göçmeni olduğu için
     aslen Macırız. Pişmaniye adında bir Gine Domuzumuz var. O da ailemizin beşinci bireyi diyebiliriz. Hayatım boyunca Bursa'da yaşadım. Şu an üniversiteden kaynaklı Sakarya'ya geldim.
@@ -38,31 +53,40 @@
 </p>
 
     <h2>Ailem</h2>
-    <ul>
-      <li><b>Annem ve Babam</b></li>
-      <p>Annem ve babam 20 yılı aşkındır evliler. Aynı iş yerinde çalışıyorlar ve orada tanışmışlar.</p>
-      
-      <div class="container">            
-        <img src="resimler/IMG_1207.JPG" class="img-thumbnail" width="304" height="236"> 
-      </div>
-      <li><b>Kardeşim Barış</b></li>
-      <p>Barış 2012 yılında doğduğunda ben ilkokul 3. sınıfa gidiyordum. Onu hastanede ilk gördüğüm an asla unutamayacağım bir anım. Ailemizdeki favori
+       <h3>Annem ve Babam</h3>
+        <p>Annem ve babam 20 yılı aşkındır evliler. Aynı iş yerinde çalışıyorlar ve orada tanışmışlar.</p>
+        <img src="resimler/IMG_1207.JPG" class="float-left" width="304" height="234">
+       <h3>Kardeşim Barış</h3>
+        <p>Barış 2012 yılında doğduğunda ben ilkokul 3. sınıfa gidiyordum. Onu hastanede ilk gördüğüm an asla unutamayacağım bir anım. Ailemizdeki favori
         kişim diyebiliriz. </p>
-        <div class="container">            
-          <img src="resimler/WhatsApp Image 2023-05-04 at 15.52.28.jpeg" class="img-thumbnail" width="304" height="236"> 
-        </div>
+        <img src="resimler/WhatsApp Image 2023-05-04 at 15.52.28.jpeg" class="float-left" width="304" height="234">
+       <h3>Pişmaniye</h3>
+        <p>Pişmaniye ailemize 2022 yılı yazında katıldı. Kendisi gine domuzu. En sevdiği şey sebzeler.</p>
+        <img src="resimler/94403.jpg" class="float-left" width="304" height="234">
     </ul>
     <h2>Hobilerim</h2>
-<p>
-    <ul>
+    <p>
+      <ul>
         <li>Voleybol</li>
         <li>Müzik</li>
         <li>Kitap Okuma</li>
         <li>Dizi/Film</li>
         <li>Gezmek</li>
-    </ul>
+      </ul>
     <p>Hobilerime ait detaylı bilgiye aşağıdaki linkten ulaşabilirsiniz:</p>
     <a href="ilgialanlarim.html" title="ilgialanlarım">İlgi Alanlarıma Git</a>
-</p>
+    </p>
+    <h2>Etkinlikler</h2>
+    <ul>
+      <li><b>Tübitak Yarışması</b></li>
+      <p>2019 yılında arkadaşım Nida ile Tübitak Proje yarışmasına katıldık. Kestane atığından mikrobiyal yakıt ürettik. </p>
+      <img src="resimler/IMG-20210326-WA0034.jpg" class="float-left" width="304" height="234"> 
+      <li><b>TVF Yaz Kampı</b></li>
+      <p>Takım arkadaşlarımla beraber TVF'nin düzenlediği yaz kampına katıldık.</p>
+      <li><b></b></li>
+      <li><b></b></li>
+    </ul>
+
+
 </body>
 </html>
