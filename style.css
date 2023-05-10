@@ -1,7 +1,68 @@
-body{
-    background-color: rgb(154, 154, 154);
-}
-.anaArkaPlan{
-    background-color: rgb(255, 255, 255);
-}
+    body{
+        background-color: rgb(154, 154, 154);
+        
+        
+    }
+    .anaArkaPlan{
+        background-color: rgb(255, 255, 255);
+    }
+    #sehrimbody{
+        background-color: rgb(167, 180, 151);
+        background-image: url(resimler/bursalogo.png);
+  background-position: right bottom ;
+  background-repeat: repeat;
+  padding: 10px;
+    }
+    #mirasbody{
+        background-color: rgb(248, 247, 204);
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+  
+      li {
+        float: left;
+        border-right:1px solid #bbb;
+      }
+  
+      li:last-child {
+        border-right: none;
+      }
+  
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+  
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+  
+      .active {
+        background-color: #8e8e8f;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    
+
+
+
+
 
