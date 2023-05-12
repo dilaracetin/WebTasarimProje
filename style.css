@@ -67,6 +67,9 @@
   padding: 10px;
   background-size: 10%;
       }
+      #carousel-inner{
+        width: 50%;
+      }
     
 
 
