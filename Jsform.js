@@ -20,7 +20,7 @@ function formKontrol(frm)
     }
     if ( mailchck<1 || dotpos<mailchck+2 || dotpos+2>=email.length )
     {
-        alert("Geçerli email adresi girin<br>Örnek  ####@hotmail.com");
+        alert("Geçerli email adresi girin");
         return false;
     }      
     

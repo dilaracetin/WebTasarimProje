@@ -6,6 +6,53 @@
     .anaArkaPlan{
         background-color: rgb(255, 255, 255);
     }
+
+    /*navbar*/
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #8e8e8f;
+    }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /*şehrim */
     #sehrimbody{
         background-color: rgb(167, 180, 151);
         background-image: url(resimler/bursalogo.png);
@@ -14,52 +61,12 @@
   padding: 10px;
   background-size: 25%;
     }
+
+    /*miras*/
     #mirasbody{
         background-color: rgb(248, 247, 204);
     }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-  
-      li {
-        float: left;
-        border-right:1px solid #bbb;
-      }
-  
-      li:last-child {
-        border-right: none;
-      }
-  
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-  
-      li a:hover:not(.active) {
-        background-color: #111;
-      }
-  
-      .active {
-        background-color: #8e8e8f;
-      }
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-      }
-      
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
+    /*ilgi alanlarom*/
       #ilgiBody{
         background-image: url(resimler/gitar.gif);
         background-position: right bottom ;
@@ -106,9 +113,73 @@
       .Summary, .Experience, .Education, .project {
         margin-bottom: 30px;
       }
-      .h2 {
-        background-color: rgb(4, 96, 150);
-      }
+      /*login*/
+      #loginBody{
+        background-color: #b9b9ba;
+      } 
+
+      /*iletisim*/
+      #iletisim{
+        margin: 5% 40% 5% 5%;
+        border:solid ;
+        border-radius: 20px;
+        background-color:white;
+    }
+    #formAcıklama{
+        margin-bottom: 10px;   
+        border-bottom: 4px dotted #6e6e6e;
+    }
+    
+    #formAcıklama>p{
+        font-size: 30px;
+        margin-left: -20px;
+    }
+    
+    td{
+         
+        padding-bottom: 25px;
+    }
+    
+    input,textarea{
+        border-radius: 10px;
+    }
+    
+    textarea{
+        width: 300px;
+    }
+    
+    @media (max-width:600px){
+        textarea{
+            width: 240px;
+        }
+        #sehirsec{
+            width: 240px;
+        }
+        select{
+            width: 100px;
+        }
+    
+    }
+    
+    #formIletisim{
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    #submit{  
+        background-color: grey;
+        margin-right:10px ;
+        color:white;
+    }
+    
+    #reset{
+        background-color: grey;
+        color:white;
+    }
+    
+    #iletiForm{
+        resize: none;
+    }
 
 
 

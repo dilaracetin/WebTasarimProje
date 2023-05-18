@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <title>Login Sayfası</title>
-  <script>
-    function validateForm() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      if (username.trim() === "" || password.trim() === "") {
-        alert("Kullanıcı adı ve şifre boş bırakılamaz.");
-        return false;
-      }
-
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(username)) {
-        alert("Kullanıcı adı geçerli bir e-posta adresi olmalıdır.");
-        return false;
-      }
-
-      return true;
-    }
-  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
-<body>
-  <h2>Giriş Sayfası</h2>
-  <form action="login.php" method="post" onsubmit="return validateForm()">
-    <label for="username">Kullanıcı Adı:</label>
-    <input type="text" id="username" name="username"><br><br>
-
-    <label for="password">Şifre:</label>
-    <input type="password" id="password" name="password"><br><br>
-
-    <input type="submit" value="Giriş Yap">
-  </form>
-
- 
+<body id="loginBody">
+    <ul>
+        <li><a class="active" href="index.html">Hakkımda</a></li>
+        <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+        <li><a href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+        <li><a href="sehrim.html">Şehrim</a></li>
+        <li><a href="mirasimiz.html">Mirasımız</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li style="float:right"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    <div class="container-fluid" id="login">
+        <form class="formLogin" action="PhpLogin.php" method="POST">        
+              <input type="email" placeholder="Kullanıcı Adı" required name="kullaniciAdi" id="kullaniciAdi" class="loginInput"><br>
+              <input type="password" placeholder="Sifre" required name="kullaniciSifre" class="loginInput"><br>
+              <input type="submit" id="submit" class="loginInput" >
+           </table>
+       </form>
+    </div>
+    
 </body>
 </html>
